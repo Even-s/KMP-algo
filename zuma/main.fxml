@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="BackGround" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handle" onMouseMoved="#moving" prefHeight="500.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zuma.main">
+   <children>
+      <Line fx:id="A" endX="21.0" endY="420.0" startX="68.0" startY="-50.0" visible="false" />
+      <Line fx:id="C" endX="540.0" endY="448.0" startX="80.0" startY="455.0" visible="false" />
+      <QuadCurve fx:id="B" controlX="40.0" controlY="455.0" endX="80.0" endY="455.0" fill="DODGERBLUE" startX="21.0" startY="420.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Line fx:id="E" endX="415.0" endY="65.0" startX="585.0" startY="388.0" visible="false" />
+      <QuadCurve fx:id="D" controlX="587.0" controlY="438.0" endX="585.0" endY="388.0" fill="DODGERBLUE" startX="540.0" startY="448.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Line fx:id="G" endX="60.0" endY="330.0" startX="315.0" startY="35.0" visible="false" />
+      <QuadCurve fx:id="F" controlX="375.0" controlY="10.0" endX="315.0" endY="35.0" fill="DODGERBLUE" startX="415.0" startY="65.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Line fx:id="I" endX="490.0" endY="395.0" startX="110.0" startY="395.0" visible="false" />
+      <QuadCurve fx:id="H" controlX="45.0" controlY="395.0" endX="110.0" endY="395.0" fill="DODGERBLUE" startX="60.0" startY="330.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Line fx:id="K" endX="400.0" endY="135.0" startX="510.0" startY="340.0" visible="false" />
+      <QuadCurve fx:id="J" controlX="530.0" controlY="383.0" endX="510.0" endY="340.0" fill="DODGERBLUE" startX="490.0" startY="395.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <QuadCurve fx:id="L" controlX="368.0" controlY="80.0" endX="320.0" endY="120.0" fill="DODGERBLUE" startX="400.0" startY="135.0" stroke="BLACK" strokeType="INSIDE" visible="false" />
+      <Line fx:id="M" endX="165.0" endY="310.0" startX="320.0" startY="120.0" visible="false" />
+      <ImageView fitHeight="500.0" fitWidth="624.0">
+         <image>
+            <Image url="@triangle.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Frog" x="309.0" y="236.0">
+         <image>
+            <Image url="@Frog.png" />
+         </image>
+      </ImageView>
+      <Group layoutX="24.0" layoutY="21.0">
+         <children>
+            <ImageView fx:id="Yellow" layoutX="266.0" layoutY="205.0" visible="false">
+               <image>
+                  <Image url="@ball/Yellow.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Blue" layoutX="266.0" layoutY="205.0" visible="false">
+               <image>
+                  <Image url="@ball/Blue.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Green" layoutX="266.0" layoutY="205.0" visible="false">
+               <image>
+                  <Image url="@ball/Green.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="White" layoutX="266.0" layoutY="205.0" visible="false">
+               <image>
+                  <Image url="@ball/White.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Red" layoutX="266.0" layoutY="205.0" visible="false">
+               <image>
+                  <Image url="@ball/Red.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <ImageView fx:id="EndGame" fitHeight="152.0" fitWidth="624.0" layoutY="75.0" visible="false">
+         <image>
+            <Image url="@EngGame.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Losetext" layoutX="151.0" layoutY="121.0" text="You are Loser！" visible="false">
+         <font>
+            <Font name="Book Antiqua Bold" size="47.0" />
+         </font>
+      </Label>
+      <Label fx:id="Wintext" layoutX="191.0" layoutY="122.0" text="You Win！" visible="false">
+         <font>
+            <Font name="Elephant" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="Leave" layoutX="500.0" layoutY="21.0" mnemonicParsing="false" onAction="#onBackPress" prefHeight="37.0" prefWidth="105.0" text="不玩了" />
+   </children>
+</Pane>

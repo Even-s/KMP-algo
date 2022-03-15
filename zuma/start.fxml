@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zuma.start">
+   <children>
+      <ImageView fitHeight="424.0" fitWidth="662.0" layoutX="-31.0">
+         <image>
+            <Image url="@menuphoto.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="132.0" layoutY="244.0" mnemonicParsing="false" onAction="#onStartPress" prefHeight="40.0" prefWidth="336.0" text="我要進行無產階級革命" />
+      <Button layoutX="132.0" layoutY="314.0" mnemonicParsing="false" onAction="#onExitPress" prefHeight="40.0" prefWidth="336.0" text="我金正恩啦不用" />
+   </children>
+</Pane>
